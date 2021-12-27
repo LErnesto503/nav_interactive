@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    background: #00000021;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    position: relative;
+    padding: 10px;
+    box-shadow:
+    5px 5px 20px 0 #00000041,
+    -5px -5px 20px 0 #fff;
+    border-radius: 10px;
+}
+.menu .mov {
+    position: absolute;
+    left: 10px;
+    width: 90px;
+    height: 95px;
+    border-radius: 10%;
+    
+    box-shadow:
+    inset -5px -5px 20px 0 #fff,
+    inset 5px 5px 20px 0 #00000041;
+
+    transition: 0.3s;
+}
+.menu ul {
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+.menu ul li {
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.menu ul li a ion-icon {
+    position: relative;
+    font-size: 3em;
+    color: #787878;
+    z-index: -1;
+}
+header .menu ul li .four .active {
+    left: 100px;
+}
